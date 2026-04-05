@@ -1,21 +1,25 @@
-# 🪨 /grugmode
+# 🪨 /grug
 
 **channel the [grug brained developer](https://grugbrain.dev/) for hard-won software wisdom**
 
 A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that channels the philosophy of the **grug brained developer** — practical grug-based engineering takes for eternel complexity spirit demon battle.
 
+```
+/grug is this a good idea?
+```
+
 ## Usage
 
 **enter grug mode** with any of:
 
-- `/grugmode`
+- `/grug`
 - `grug mode`
 - `grug take`
 - `what would grug say`
 - `give me the grug perspective`
 - `think like grug`
 
-then grug give take on what you currently speak. Architecture decision? `/grugmode`. Framework choice? `/grugmode`. Coworker wants to add GraphQL for a CRUD app? definitely `/grugmode`.
+then grug give take on what you currently speak. Architecture decision? `/grug`. Framework choice? `/grug`. Coworker wants to add GraphQL for a CRUD app? definitely `/grug`.
 
 grug mode is **sticky** — once on, every reply comes from grug until you exit.
 
@@ -23,12 +27,12 @@ grug mode is **sticky** — once on, every reply comes from grug until you exit.
 
 ## Install
 
-copy `grugmode/` into `~/.claude/skills/` or `<project>/.claude/skills/`
+copy `grug/` into `~/.claude/skills/` or `<project>/.claude/skills/`
 
 ### With `skills` CLI (one-liner, if you use it)
 
 ```bash
-npx skills add replete/grugmode
+npx skills add replete/grug-skill
 ```
 
 ### Global install
@@ -36,14 +40,14 @@ npx skills add replete/grugmode
 ```bash
 # macOS / Linux
 mkdir -p ~/.claude/skills && \
-  curl -sL https://github.com/replete/grugmode/archive/main.tar.gz | \
-  tar -xz -C ~/.claude/skills --strip-components=1 grugmode-main/grugmode
+  curl -sL https://github.com/replete/grug-skill/archive/main.tar.gz | \
+  tar -xz -C ~/.claude/skills --strip-components=1 grug-skill-main/grug
 
 # Windows (PowerShell)
 $dst = "$env:USERPROFILE\.claude\skills"; New-Item -ItemType Directory -Force -Path $dst | Out-Null; `
-  Invoke-WebRequest -Uri "https://github.com/replete/grugmode/archive/main.zip" -OutFile "$env:TEMP\grugmode.zip"; `
-  Expand-Archive -Force "$env:TEMP\grugmode.zip" "$env:TEMP\grugmode-extract"; `
-  Copy-Item -Recurse -Force "$env:TEMP\grugmode-extract\grugmode-main\grugmode" $dst
+  Invoke-WebRequest -Uri "https://github.com/replete/grug-skill/archive/main.zip" -OutFile "$env:TEMP\grug.zip"; `
+  Expand-Archive -Force "$env:TEMP\grug.zip" "$env:TEMP\grug-extract"; `
+  Copy-Item -Recurse -Force "$env:TEMP\grug-extract\grug-skill-main\grug" $dst
 ```
 
 ### Project install
@@ -51,14 +55,14 @@ $dst = "$env:USERPROFILE\.claude\skills"; New-Item -ItemType Directory -Force -P
 ```bash
 # macOS / Linux
 mkdir -p .claude/skills && \
-  curl -sL https://github.com/replete/grugmode/archive/main.tar.gz | \
-  tar -xz -C .claude/skills --strip-components=1 grugmode-main/grugmode
+  curl -sL https://github.com/replete/grug-skill/archive/main.tar.gz | \
+  tar -xz -C .claude/skills --strip-components=1 grug-skill-main/grug
 
 # Windows (PowerShell)
 $dst = ".claude\skills"; New-Item -ItemType Directory -Force -Path $dst | Out-Null; `
-  Invoke-WebRequest -Uri "https://github.com/replete/grugmode/archive/main.zip" -OutFile "$env:TEMP\grugmode.zip"; `
-  Expand-Archive -Force "$env:TEMP\grugmode.zip" "$env:TEMP\grugmode-extract"; `
-  Copy-Item -Recurse -Force "$env:TEMP\grugmode-extract\grugmode-main\grugmode" $dst
+  Invoke-WebRequest -Uri "https://github.com/replete/grug-skill/archive/main.zip" -OutFile "$env:TEMP\grug.zip"; `
+  Expand-Archive -Force "$env:TEMP\grug.zip" "$env:TEMP\grug-extract"; `
+  Copy-Item -Recurse -Force "$env:TEMP\grug-extract\grug-skill-main\grug" $dst
 ```
 
 
