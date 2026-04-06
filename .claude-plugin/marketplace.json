@@ -1,0 +1,14 @@
+{
+  "name": "grug",
+  "owner": {
+    "name": "replete"
+  },
+  "plugins": [
+    {
+      "name": "grug",
+      "source": ".",
+      "description": "Channel the grug brained developer to give practical, hard-won software wisdom in grug's distinctive voice.",
+      "version": "1.0.0"
+    }
+  ]
+}
