@@ -5,7 +5,7 @@
 A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that channels the philosophy of the **grug brained developer** — practical grug-based engineering takes for eternel complexity spirit demon battle.
 
 ```
-/grug is this a good idea?
+/grug what is your take?
 ```
 
 ## Usage
@@ -27,12 +27,16 @@ grug mode is **sticky** — once on, every reply comes from grug until you exit.
 
 ## Install
 
-copy `grug/` into `~/.claude/skills/` or `<project>/.claude/skills/`
+### Claude Code plugin marketplace
+
+```
+/plugin marketplace add replete/grug
+```
 
 ### With `skills` CLI (one-liner, if you use it)
 
 ```bash
-npx skills add replete/grug-skill
+npx skills add replete/grug
 ```
 
 ### Global install
@@ -40,14 +44,14 @@ npx skills add replete/grug-skill
 ```bash
 # macOS / Linux
 mkdir -p ~/.claude/skills && \
-  curl -sL https://github.com/replete/grug-skill/archive/main.tar.gz | \
-  tar -xz -C ~/.claude/skills --strip-components=1 grug-skill-main/grug
+  curl -sL https://github.com/replete/grug/archive/main.tar.gz | \
+  tar -xz -C ~/.claude/skills --strip-components=1 grug-main/grug
 
 # Windows (PowerShell)
 $dst = "$env:USERPROFILE\.claude\skills"; New-Item -ItemType Directory -Force -Path $dst | Out-Null; `
-  Invoke-WebRequest -Uri "https://github.com/replete/grug-skill/archive/main.zip" -OutFile "$env:TEMP\grug.zip"; `
+  Invoke-WebRequest -Uri "https://github.com/replete/grug/archive/main.zip" -OutFile "$env:TEMP\grug.zip"; `
   Expand-Archive -Force "$env:TEMP\grug.zip" "$env:TEMP\grug-extract"; `
-  Copy-Item -Recurse -Force "$env:TEMP\grug-extract\grug-skill-main\grug" $dst
+  Copy-Item -Recurse -Force "$env:TEMP\grug-extract\grug-main\grug" $dst
 ```
 
 ### Project install
@@ -55,14 +59,14 @@ $dst = "$env:USERPROFILE\.claude\skills"; New-Item -ItemType Directory -Force -P
 ```bash
 # macOS / Linux
 mkdir -p .claude/skills && \
-  curl -sL https://github.com/replete/grug-skill/archive/main.tar.gz | \
-  tar -xz -C .claude/skills --strip-components=1 grug-skill-main/grug
+  curl -sL https://github.com/replete/grug/archive/main.tar.gz | \
+  tar -xz -C .claude/skills --strip-components=1 grug-main/grug
 
 # Windows (PowerShell)
 $dst = ".claude\skills"; New-Item -ItemType Directory -Force -Path $dst | Out-Null; `
-  Invoke-WebRequest -Uri "https://github.com/replete/grug-skill/archive/main.zip" -OutFile "$env:TEMP\grug.zip"; `
+  Invoke-WebRequest -Uri "https://github.com/replete/grug/archive/main.zip" -OutFile "$env:TEMP\grug.zip"; `
   Expand-Archive -Force "$env:TEMP\grug.zip" "$env:TEMP\grug-extract"; `
-  Copy-Item -Recurse -Force "$env:TEMP\grug-extract\grug-skill-main\grug" $dst
+  Copy-Item -Recurse -Force "$env:TEMP\grug-extract\grug-main\grug" $dst
 ```
 
 
